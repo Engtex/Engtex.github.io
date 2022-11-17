@@ -31,7 +31,7 @@ success: function(data){
 			else if(item["Status"].includes("Perm")){
 				dc = "2";
 			}
-			if(item["Extension"]!=undefined){
+			if(item["Extension"]!=undefined&&item["Extension"!=""){
 				exten=item["Extension"]+": ";
 			}
 			document.getElementById(Pid).setAttribute("data-category",dc);
